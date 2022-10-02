@@ -23,7 +23,7 @@ void dopose(const turtlesim::Pose::ConstPtr &pose)
     //核心：获取乌龟位姿信息，转换成坐标系相对关系，并发布
     //创建动态坐标关系发布对象
     static tf2_ros::TransformBroadcaster pub; //static让每次调用回调函数时用同一个pub对象
-    //组织发布数据
+    //组织发布数据;
     geometry_msgs::TransformStamped ts;
     ts.header.frame_id = "world";
     ts.header.stamp = ros::Time::now();
