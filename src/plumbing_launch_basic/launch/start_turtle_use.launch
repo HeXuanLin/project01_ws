@@ -1,0 +1,6 @@
+<!--复用已经存在的launch文件，如start_turtle.launch-->
+<launch>
+    <!--file指向被包含的文件-->
+    <include file="$(find plumbing_launch_basic)/launch/start_turtle.launch"/>
+    <!--下面可启动其他需要使用的节点-->
+</launch>

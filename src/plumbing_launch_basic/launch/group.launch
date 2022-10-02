@@ -1,0 +1,11 @@
+<launch>
+    <!--启动两对龟GUI与键盘控制节点-->
+    <group ns="First">
+        <node pkg="turtlesim" type="turtlesim_node" name="turtle_GUI" output="screen" required="true"/>
+        <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_key" output="screen"/>
+    </group>
+    <group ns="Second">
+        <node pkg="turtlesim" type="turtlesim_node" name="turtle_GUI" output="screen" required="true"/>
+        <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_key" output="screen"/>
+    </group>
+</launch>

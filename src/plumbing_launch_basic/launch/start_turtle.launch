@@ -1,0 +1,18 @@
+<launch>
+    <!--pkg：启动节点的功能包，type：启动节点的类型，name：启动节点的名称，output：日志输出目标，ns：指定命名空间中启动节点可避免重名问题-->
+    <!--args：将参数传递给节点，respawn：true时节点关闭后自动重启，required：true时此节点退出将杀死整个roslaunch-->
+    <!--GUI-->
+    <param name = "param_A" type = "int" value = "100"/> <!--全局参数-->
+    <node pkg = "turtlesim" type = "turtlesim_node" name  = "turtle_GUI" output = "screen" required = "true">
+        <!--remap用于话题重命名(重映射)，让发布或订阅的话题统一-->
+        <remap from = "/turtle1/cmd_vel" to = "/cmd_vel"/>
+        <!--param用于向参数服务器设置参数，type：参数的类型，value：参数的值-->
+        <param name = "param_B" type = "double" value = "3.14"/> <!--私有参数-->
+    </node>
+    <!--键盘控制-->
+    <node pkg = "turtlesim" type = "turtle_teleop_key" name  = "turtle_key" output = "screen"/>
+
+    <!--rosparam用于操作参数服务器数据-->
+    <rosparam command = "load" file = "$(find plumbing_launch_basic)/launch/params.yaml"/>
+
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+    <!--nodes-->>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle_GUI"/>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_key"/>
+    <node pkg="helloword" type="helloword_pub" name="publisher" output="screen"/>
+    <node pkg="helloword" type="helloword_sub" name="subscriber" output="screen"/>
+</launch>

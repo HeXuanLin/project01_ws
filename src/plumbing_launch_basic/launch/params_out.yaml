@@ -1,0 +1,26 @@
+bg_B: 255
+bg_G: 50
+bg_R: 100
+param_A: 100
+param_B: 3.14
+rosdistro: 'melodic
+
+  '
+roslaunch:
+  uris: {host_cave_virtualbox__33487: 'http://cave-VirtualBox:33487/', host_cave_virtualbox__34453: 'http://cave-VirtualBox:34453/',
+    host_cave_virtualbox__35393: 'http://cave-VirtualBox:35393/', host_cave_virtualbox__35511: 'http://cave-VirtualBox:35511/',
+    host_cave_virtualbox__36485: 'http://cave-VirtualBox:36485/', host_cave_virtualbox__36875: 'http://cave-VirtualBox:36875/',
+    host_cave_virtualbox__36881: 'http://cave-VirtualBox:36881/', host_cave_virtualbox__38379: 'http://cave-VirtualBox:38379/',
+    host_cave_virtualbox__40453: 'http://cave-VirtualBox:40453/', host_cave_virtualbox__40503: 'http://cave-VirtualBox:40503/',
+    host_cave_virtualbox__41911: 'http://cave-VirtualBox:41911/', host_cave_virtualbox__42143: 'http://cave-VirtualBox:42143/',
+    host_cave_virtualbox__42447: 'http://cave-VirtualBox:42447/', host_cave_virtualbox__42493: 'http://cave-VirtualBox:42493/',
+    host_cave_virtualbox__42851: 'http://cave-VirtualBox:42851/', host_cave_virtualbox__43129: 'http://cave-VirtualBox:43129/',
+    host_cave_virtualbox__43143: 'http://cave-VirtualBox:43143/', host_cave_virtualbox__43665: 'http://cave-VirtualBox:43665/',
+    host_cave_virtualbox__43721: 'http://cave-VirtualBox:43721/', host_cave_virtualbox__46047: 'http://cave-VirtualBox:46047/',
+    host_cave_virtualbox__46297: 'http://cave-VirtualBox:46297/'}
+rosversion: '1.14.10
+
+  '
+run_id: 7ea3d7a2-3e40-11ed-846b-0800274bdd0b
+turtle1: {background_b: 255, background_g: 86, background_r: 255}
+turtle_GUI: {background_b: 255, background_g: 86, background_r: 69}
