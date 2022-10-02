@@ -28,7 +28,7 @@ void dopose(const turtlesim::Pose::ConstPtr &pose)
     ts.header.frame_id = "world";
     ts.header.stamp = ros::Time::now();
     ts.child_frame_id = "turtle1";
-    //坐标系偏移量设置
+    //坐标系偏移量设置;
     ts.transform.translation.x = pose->x; //乌龟坐标系相对于世界坐标系的x坐标
     ts.transform.translation.y = pose->y; //从订阅信息中取出乌龟的xy坐标
     ts.transform.translation.z = 0; //2D场景没有z坐标，通过rosmsg info turtlesim/Pose查看
