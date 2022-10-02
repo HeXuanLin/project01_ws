@@ -39,7 +39,7 @@ void dopose(const turtlesim::Pose::ConstPtr &pose)
     ts.transform.rotation.y = qtn.getY();
     ts.transform.rotation.z = qtn.getZ();
     ts.transform.rotation.w = qtn.getW();
-    //发布数据
+    //发布数据;
     pub.sendTransform(ts);
 }
 
